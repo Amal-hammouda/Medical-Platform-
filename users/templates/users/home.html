@@ -1,0 +1,14 @@
+{% extends "users/base.html" %}
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="mb-3">Welcome to Medical Platform</h1>
+    <p class="text-muted">Your health, our priority.</p>
+
+    <div class="mt-4">
+        <a href="{% url 'login' %}" class="btn btn-primary btn-lg me-2">Login</a>
+        <a href="{% url 'signup' %}" class="btn btn-outline-primary btn-lg">Sign Up</a>
+    </div>
+</div>
+{% endblock %}

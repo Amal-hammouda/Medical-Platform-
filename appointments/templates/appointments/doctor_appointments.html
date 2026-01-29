@@ -1,0 +1,29 @@
+{% extends "users/base.html" %}
+{% block content %}
+<h3>Doctor Appointments</h3>
+
+<table class="table">
+    <tr>
+        <th>Patient</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+
+    {% for a in appointments %}
+    <tr>
+        <td>{{ a.patient.username }}</td>
+        <td>{{ a.date }}</td>
+        <td>{{ a.time }}</td>
+        <td>{{ a.status }}</td>
+        <td>
+            {% if a.status == "pending" %}
+                <a href="{% url 'approve' a.id %}" class="btn btn-success btn-sm">Approve</a>
+                <a href="{% url 'reject' a.id %}" class="btn btn-danger btn-sm">Reject</a>
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
