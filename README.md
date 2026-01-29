@@ -30,7 +30,7 @@ A full-stack web application built with **Django** designed to simplify medical 
 ### 3. Doctor Experience
 | Doctor Dashboard | Appointment Management |
 | :--- | :--- |
-| ![Doctor Dashboard](Capture%20d'écran%202026-01-29%20120412.png) | ![Doctor Appointments](Doctor%20appointment.png) |
+| ![Doctor Dashboard](DoctorDashboard.png) | ![Doctor Appointments](Doctor%20appointment.png) |
 
 ## ⚙️ Installation & Setup
 
